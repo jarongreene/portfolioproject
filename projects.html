@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaron Portfolio</title>
+  </head>
+  
+  <body>
+    <header>
+      <nav class="nav">
+        <ul>
+          <li><a href="./index.html">About</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <img id="slideshow" alt="Project slideshow" name="slide" width="900" height="500" />
+
+    <section>
+    
+    <div class="manga-container">
+
+    <div class="manga-block1 about-us">
+    <h2 id="h2-text">Projects</h2>
+    </section>
+
+    <section class="grid-container">
+
+        <div id="block1">
+            <h2>Gateway Project</h2>
+    
+            <a href="https://codepen.io/jarontoogreene/project/full/ZpMepr" target="_blank">
+            <img class="img-manga1" alt="Boruto anime" src="images/gateway.png"></a>
+        
+            <h3>HTML, and CSS</h3>
+            
+            
+    
+    
+        </div>
+    
+    
+        <div id="block2">
+            <h2>Github locator</h2>
+    
+            <a href="https://github.com/jarongreene/Portfolio" target="_blank">
+            <img class="img-manga2"  alt="Demon Slayer anime" src="images/githubcards.png">
+            </a>
+            <h3>HTML, CSS, Node, and Javascript</h3>
+            
+    
+    
+        </div>
+    
+        <div id="block3">
+            <h2>JaRon Hotel App</h2>
+    
+            <a href="https://github.com/jarongreene/Portfolio" target="_blank">
+            <img class="img-manga3" alt="My Hero Academia anime" src="images/hotelapp.png">
+            </a>
+            <h3>HTML, and CSS</h3>
+            
+           
+    
+        </div>
+    
+        <div id= "block4">
+            <h2>Animated Navigation Bar</h2>
+    
+            <a href="https://github.com/jarongreene/Portfolio" target="_blank">
+            <img class="img-manga4" alt="Animated Navigation" src="images/animationapp.png">
+            </a>
+            <h3>HTML, CSS, and Javascript</h3>
+            
+    
+    
+        </div>
+    
+        <div id= "block5">
+            <h2>Pokemon Inquirer App</h2>
+    
+            <a href="https://github.com/jarongreene/Portfolio" target="_blank">
+            <img class="img-manga5" alt="Seven Deadly Sins anime" src="images/pokemonapp.png">
+            </a>
+            <h3>Javascript, and Node</h3>
+            
+    
+        </div>
+    
+        <div id= "block6">
+            <h2>Node Weather App</h2>
+    
+            <a href="https://github.com/jarongreene/Portfolio" target="_blank">
+            <img class="img-manga6" alt="Bleach anime" src="images/weatherapp.png">
+            </a>
+            <h3>Node, and Javascript</h3>
+        </div>
+
+    <div id="block7">
+        <h2>Speech Recognition Guessing Game API</h2>
+
+        <a href="https://github.com/jarongreene/Portfolio" target="_blank">
+        <img class="img-manga7" alt="Attack On Titans anime" src="images/Micapp.png">
+        </a>
+        <h3>HTML, CSS, and Javascript</h3>
+
+    </div>
+
+    <div id="block8">
+        <h2>To do list app</h2>
+
+        <a href="https://github.com/jarongreene/Portfolio" target="_blank">
+        <img class="img-manga8" alt="to do list" src="images/todo.png">
+        </a>
+        <h3>React, CSS, and Javascript</h3>
+
+    </div>
+    
+    </section>
+
+   
+   
+
+    
+
+    <section>
+
+        <footer id="footer">
+            <p><a href="https://github.com/jarongreene">Github</a><i class="fa fa-github" aria-hidden="true"></i></p>
+            <p><a href="https://twitter.com/explore">Twitter</a><i class="fa fa-twitter-square"></i></p>
+            <p><a href="https://www.linkedin.com/in/ja%E2%80%99ron-greene/">Linkdin</a><i class="fa fa-linkedin-square" aria-hidden="true"></i></p>
+            <P>Jaron portfolio &copy; 2020, All Rights Reserved</P>
+          </footer>
+        
+        </section>
+    
+
+
+
+    <script>
+
+        var m = 0;  //Start Point
+        var images = [0,1,2,3]; //Images Array. Stores Images data
+        var time = 3000; // Time Between Switch
+
+        //Image List
+        images[0] = "./images/gateway.png"
+        images[1] = "./images/hotelapp.png"
+        images[2] = "./images/micapp.png"
+        images[3] = "./images/animationapp.png"
+
+        // Change Image
+        function nextImg(){
+            document.slide.src = images[m];
+
+        // Change If Index Is Under Max
+        //.length counts how many valuables their are and it's a method
+        // -1 is for you to be able to find the location of the image
+        if(m < images.length -1){
+
+        //Check If Index is Under Max
+            m++;
+             // Add 1 to index
+        } else {
+            //Rest back to 0
+            m = 0;
+        }
+
+        //Run function every 5 seconds
+        //setTimeout is telling the function to stay on this img for 3 seconds then move on
+        setTimeout("nextImg()", time);
+        }
+
+        //Run function when page loads
+        window.onload=nextImg;
+
+
+
+
+
+
+    </script>
+</body>
+</html>

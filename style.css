@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+
+  body{
+    background-color: grey;
+  }
+
+
+  ul{
+  list-style-type: none;
+  }
+
+  .hero-image{
+    background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+  
+  }
+
+  #flex{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #about-skills{
+    padding-top: 15px;
+  }
+
+  #profile-pic{
+    width: 275px;
+    height: 400px;
+    padding-right: 15px;
+  }
+
+   
+  .hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 2.6em;
+    color: white;
+    border: 3px black solid;
+    transform: translate(-50%, -50%);
+  }
+  
+  #text-image{
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    font-size: 2.6em;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: -1
+  }
+  
+  .nav li { 
+    
+    display: inline;
+  }
+  .nav ul{
+    float: right;
+  }
+  .nav ul li a:hover {
+    background-color: #333;
+  }
+  .general-img{
+   margin: 0px 28px;
+    height: 300px;
+    width: 415px;
+  }
+  #apple{
+    margin-top: 20px;
+   border-bottom: 3px solid white;
+    padding-bottom: 30px;
+  }
+  
+  
+  footer{
+    background-color: black;
+    color: slategrey;
+    text-decoration: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  a:visited{
+      color: white;
+      
+  }
+
+  .it-jobs{
+    font-size: 30px;
+  }
+  
+  .it-image{
+    height: 200px;
+    margin-left: 45%;
+    }
+  #blinddata{
+    margin-left: 40%;
+    margin-top: 20px;
+   border-bottom: 3px solid white;
+    padding-bottom: 12px;
+  }
+  
+  #redventures{
+    margin-top: 20px;
+   border-bottom: 3px solid white;
+    padding-bottom: 30px;
+  }
+  .it-text{
+    margin-left: 30%; 
+    font-size: 30px;
+  }
+  #itjobs-header{
+    font-size: 85px;
+    border: 2px solid white;
+    padding-left: 165px;
+  }
+  
+  
+  nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  nav ul hover{
+    color: black;
+  }
+  nav li a{
+    display: inline;
+    text-align: center;
+    padding-right: 50px;
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    }
+  
+  #Manhattan{
+    margin-top: 20px;
+   border-bottom: 3px solid white;
+    padding-bottom: 12px;
+  }
+  #Harlem{
+    margin-top: 20px;
+    border-bottom: 3px solid white;
+    padding-bottom: 12px;
+  }
+  #Brooklyn{
+    margin-top: 20px;
+    border-bottom: 3px solid white;
+    padding-bottom: 12px;
+  }
+  #comment{
+    padding: 50px;
+  }
+  .form input {
+    display:block
+  }
+  form{
+    margin-left: 45%;
+  }
+  #contact{
+    margin-left: 35%;
+    font-size: 80px;
+  }
+  #footer{
+    padding-left: 45%;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+  }
+  #contact-photo{
+    width: 500px;
+    
+  }
+  
+  .todo-image{
+    width: 350px;
+    margin-left: 45%;
+    height: 500px;
+    
+  }
+  
+  #Harlem h2{
+    font-size: 100px; 
+    margin-left: 45%;
+    
+  }
+  
+  #Harlem li{
+    font-size: 50px;
+    padding-left: 445px;
+  }
+  
+  #Manhattan h2{
+    font-size: 100px; 
+    margin-left: 40%;
+    
+  }
+  
+  #Manhattan li{
+    font-size: 50px;
+    padding-left: 445px;
+  }
+  
+  #Brooklyn h2{
+    font-size: 100px; 
+    margin-left: 42%;
+    
+  }
+  
+  #Brooklyn li{
+    font-size: 50px;
+    padding-left: 445px;
+  }
+  
+  #to-do{
+    font-size: 85px;
+    border: 2px solid white;
+    padding-left: 165px;
+  }
+  
+  .it-jobs{
+    text-align: center;
+  }
+  
+  #index-header{
+    font-size: 55px;
+    border: 2px solid white;
+    padding-left: 165px;
+  }
+  
+  .index-text{
+    font-size: 35px;
+    width: 50%;
+  }
+  .home {
+  padding: 3px 3px;
+  }
+
+
+/*Projects page css */
+
+#slideshow{
+    display: block;
+    margin: 0 auto;
+}
+
+.grid-container {
+
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+   }
+   
+   
+
+
+.img-manga1{
+    height: 400px;
+    width: 450px;
+}
+
+
+.img-manga2{
+    height: 400px;
+    width: 450px;
+}
+
+.img-manga3{
+    height: 400px;
+    width: 450px;
+}
+
+.img-manga4{
+    height: 400px;
+    width: 450px;
+}
+
+.img-manga5{
+    height: 400px;
+    width: 450px;
+}
+
+.img-manga6{
+    height: 400px;
+    width: 450px;
+}
+
+.img-manga7{
+    height: 400px;
+    width: 450px;
+}
+
+.img-manga8{
+    height: 400px;
+    width: 450px;
+}
+
